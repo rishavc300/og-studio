@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "OG Studio",
+  "version": "1.1.0",
+  "description": "Brings back the classic channel analytics and content pages. Your data stays in your browser.",
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://studio.youtube.com/*"
+      ],
+      "js": [
+        "src/early.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://studio.youtube.com/*"
+      ],
+      "js": [
+        "src/data.js",
+        "src/ui.js",
+        "src/tabs.js",
+        "src/main.js"
+      ],
+      "css": [
+        "src/og.css"
+      ],
+      "run_at": "document_idle",
+      "world": "MAIN"
+    }
+  ],
+  "minimum_chrome_version": "111"
+}
