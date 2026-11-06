@@ -1,0 +1,7 @@
+captures/
+test/
+NOTES.md
+STORE_LISTING.md
+store/
+*.zip
+.DS_Store
