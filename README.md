@@ -30,7 +30,7 @@ Studio's old code can show Revenue on channels that never earned anything. OG St
 
 ## Install
 
-Not on the Chrome Web Store yet.
+Submitted to the Chrome Web Store, waiting on review. Until then, install it by hand:
 
 1. Download `OG-Studio-1.1.0.zip` from [Releases](https://github.com/rishavc300/og-studio/releases) and unzip it.
 2. Open `chrome://extensions` and turn on **Developer mode**.
