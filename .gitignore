@@ -5,3 +5,4 @@ STORE_LISTING.md
 store/
 *.zip
 .DS_Store
+launch/
