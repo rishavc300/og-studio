@@ -1,5 +1,7 @@
 # OG Studio
 
+[![Chrome Web Store users](https://img.shields.io/chrome-web-store/users/bgbcbjlpkpmledpkkbgbhfhfjcliedpe?label=users)](https://chromewebstore.google.com/detail/og-studio/bgbcbjlpkpmledpkkbgbhfhfjcliedpe) [![Chrome Web Store version](https://img.shields.io/chrome-web-store/v/bgbcbjlpkpmledpkkbgbhfhfjcliedpe)](https://chromewebstore.google.com/detail/og-studio/bgbcbjlpkpmledpkkbgbhfhfjcliedpe)
+
 A Chrome extension that brings back the classic **Channel analytics** and **Channel content** pages in YouTube Studio, for channels that were moved to the new layout.
 
 ![Classic Channel analytics page, shown with made-up sample data](docs/overview.png)
@@ -30,12 +32,9 @@ Studio's old code can show Revenue on channels that never earned anything. OG St
 
 ## Install
 
-Submitted to the Chrome Web Store, waiting on review. Until then, install it by hand:
+Get it from the [Chrome Web Store](https://chromewebstore.google.com/detail/og-studio/bgbcbjlpkpmledpkkbgbhfhfjcliedpe).
 
-1. Download `OG-Studio-1.1.0.zip` from [Releases](https://github.com/rishavc300/og-studio/releases) and unzip it.
-2. Open `chrome://extensions` and turn on **Developer mode**.
-3. Click **Load unpacked** and pick the unzipped folder.
-4. Reload any open Studio tabs.
+Or install it by hand: download `OG-Studio-1.1.0.zip` from [Releases](https://github.com/rishavc300/og-studio/releases), unzip it, open `chrome://extensions`, turn on **Developer mode**, click **Load unpacked** and pick the folder.
 
 ## Project layout
 
