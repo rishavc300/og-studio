@@ -1,6 +1,6 @@
 # OG Studio
 
-[![Chrome Web Store users](https://img.shields.io/chrome-web-store/users/bgbcbjlpkpmledpkkbgbhfhfjcliedpe?label=users)](https://chromewebstore.google.com/detail/og-studio/bgbcbjlpkpmledpkkbgbhfhfjcliedpe) [![Chrome Web Store version](https://img.shields.io/chrome-web-store/v/bgbcbjlpkpmledpkkbgbhfhfjcliedpe)](https://chromewebstore.google.com/detail/og-studio/bgbcbjlpkpmledpkkbgbhfhfjcliedpe)
+[![Chrome Web Store version](https://img.shields.io/chrome-web-store/v/bgbcbjlpkpmledpkkbgbhfhfjcliedpe)](https://chromewebstore.google.com/detail/og-studio/bgbcbjlpkpmledpkkbgbhfhfjcliedpe)
 
 A Chrome extension that brings back the classic **Channel analytics** and **Channel content** pages in YouTube Studio, for channels that were moved to the new layout.
 

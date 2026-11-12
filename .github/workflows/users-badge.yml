@@ -1,0 +1,31 @@
+name: Users badge
+on:
+  schedule:
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  badge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add the users badge once the Web Store has a real count
+        run: |
+          ID=bgbcbjlpkpmledpkkbgbhfhfjcliedpe
+          if grep -q "chrome-web-store/users" README.md; then echo "badge already there"; exit 0; fi
+          VAL=$(curl -s "https://img.shields.io/chrome-web-store/users/$ID.json" | python3 -c "import sys,json; print(json.load(sys.stdin).get('value',''))")
+          echo "users: $VAL"
+          case "$VAL" in ""|"not found"|"inaccessible"|*invalid*) exit 0;; esac
+          URL="https://chromewebstore.google.com/detail/og-studio/$ID"
+          BADGE="[![Chrome Web Store users](https://img.shields.io/chrome-web-store/users/$ID?label=users)]($URL) "
+          python3 - "$BADGE" <<'PY'
+          import sys
+          s = open("README.md").read()
+          s = s.replace("[![Chrome Web Store version]", sys.argv[1] + "[![Chrome Web Store version]", 1)
+          open("README.md", "w").write(s)
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "README: add live users badge"
+          git push
